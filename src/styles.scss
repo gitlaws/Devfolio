@@ -3,8 +3,8 @@
 @import "./styles/variables";
 @import "./styles/mixins";
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 * {
@@ -15,15 +15,15 @@
   font-family: "Raleway", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   // font-family: "Montserrat", sans-serif;
+//   // font-weight: bold;
+// }
 
 i {
   cursor: pointer;
@@ -61,8 +61,8 @@ textarea {
   &:hover {
     color: white;
     transition: background 0.8s;
-    background: $main-black radial-gradient(circle, transparent 1%, $main-black 1%)
-      center/15000%;
+    background: $main-black
+      radial-gradient(circle, transparent 1%, $main-black 1%) center/15000%;
   }
 
   &:active {
