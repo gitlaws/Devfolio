@@ -28,6 +28,12 @@
     0 0 30px #f94c10, 0 0 40px #f94c10, 0 0 55px #f94c10, 0 0 75px #f94c10;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 li {
   padding: 20px;
 }
