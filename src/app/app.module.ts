@@ -5,22 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { CardComponent } from './components/card/card.component';
-import { NavComponent } from './components/nav/nav.component';
+
 import { CoverComponent } from './components/cover/cover.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentDocumentationComponent,
     CardComponent,
-    NavComponent,
-    CoverComponent
+    CoverComponent,
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
