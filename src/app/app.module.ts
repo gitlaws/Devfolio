@@ -8,6 +8,7 @@ import { CardComponent } from './components/card/card.component';
 
 import { CoverComponent } from './components/cover/cover.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { GridPanelComponent } from './components/grid-panel/grid-panel.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     CardComponent,
     CoverComponent,
     NavbarComponent,
+    GridPanelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
