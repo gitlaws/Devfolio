@@ -6,12 +6,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 20px;
+  background-color: $main-black;
 }
 
 .box {
-  background-color: $main-black;
-  padding: 130px;
-  margin: 20px;
+    padding: 130px;
+    margin: 20px;
+    background-color: #fff;
 }
 
 .box > img {
