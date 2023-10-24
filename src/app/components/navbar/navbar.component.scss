@@ -12,31 +12,45 @@
   @include box-shadow();
 }
 
-.main-nav {
-  display: flex;
-  list-style: none;
-  margin: auto 0;
-  font-size: 0.7em;
-  align-items: center;
-}
-
-.push {
-  margin-right: auto;
-  // font-family: "cabin";
-  font-weight: 700;
-  // font-size: 2rem;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f94c10,
-    0 0 30px #f94c10, 0 0 40px #f94c10, 0 0 55px #f94c10, 0 0 75px #f94c10;
-}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+  font-size: 0.7em;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.push {
+  align-items: center;
+  // margin-left: 50px;
+  margin-right: auto;
+  // font-family: "cabin";
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f94c10,
+    0 0 30px #f94c10, 0 0 40px #f94c10, 0 0 55px #f94c10, 0 0 75px #f94c10;
+}
+
+.fa {
+  margin-right: 2rem;
+}
+
 li {
-  padding: 20px;
+  // padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.pushmr {
+  margin-right: 1rem;
+  align-items: center;
 }
 
 a {
@@ -44,9 +58,22 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+i {
+  margin-left: 1rem;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: $tablet) {
   .main-nav {
     font-size: 0.5em;
     padding: 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
+
+    
+    i {
+      visibility: visible;
+    }
   }
 }
