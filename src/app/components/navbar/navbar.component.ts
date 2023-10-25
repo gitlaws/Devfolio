@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
-  sidenavOpen = false;
-
-  toggleSidenav() {
-    this.sidenavOpen = !this.sidenavOpen;
-  }
-}
+export class NavbarComponent {}

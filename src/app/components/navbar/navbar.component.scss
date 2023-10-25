@@ -3,82 +3,35 @@
 @import "src/styles/_variables";
 
 .zone {
-  margin: 0 auto;
-  // font-size: 2em;
-  background-color: $main-black;
-  color: #fff;
-  //   border-radius: 4px;
-  //   border: 1px solid #bbb;
-  @include box-shadow();
-}
-
-.sticky {
   position: fixed;
   top: 0;
-  width: 100%;
-}
-
-.main-nav {
+  left: 0;
+  right: 0;
   display: flex;
-  list-style: none;
-  // margin: auto 0;
-  font-size: 1.5em;
-  align-items: center;
-  padding: 20px 0px;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+  backdrop-filter: blur(5px);
 }
 
-.push {
-  align-items: center;
-  // margin-left: 50px;
-  margin-right: auto;
-  // font-family: "cabin";
-  font-weight: 700;
-  // font-size: 2.2em;
-}
-
-.fa {
-  margin-right: 2rem;
-}
-
-li {
-  // padding: 20px;
-  display: flex;
-  gap: 1rem;
-}
-
-.pushmr {
-  margin-right: 1rem;
-  align-items: center;
-}
-
-a {
-  color: #f5f5f6;
+.zone a {
   text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
 }
 
-i {
-  margin-left: 1rem;
-  visibility: hidden;
+.menu-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-@media only screen and (max-width: $tablet) {
-  .main-nav {
-    font-size: 1em;
-    padding: 10px auto;
-  }
+.menu-items li a {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
-  @media only screen and (max-width: $mobile) {
-    span {
-      display: flex;
-      align-items: center;
-    }
-
-    li {
-      display: none;
-    }
-    i {
-      visibility: visible;
-      font-size: 1.2em;
-    }
-  }
+.menu-items li a:hover {
+  background-color: #ccc7d3;
 }
