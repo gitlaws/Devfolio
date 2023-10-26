@@ -16,7 +16,7 @@
 
 .zone a {
   text-decoration: none;
-  color: #fff;
+  color: #edd9d9;
   font-size: 2rem;
 }
 
@@ -35,5 +35,5 @@
 
 .menu-items li a:hover {
   cursor: pointer;
-  background-color: #84C69B;
+  background-color: $menu-items-hover;
 }
