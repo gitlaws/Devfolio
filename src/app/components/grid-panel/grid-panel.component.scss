@@ -17,6 +17,7 @@
 .box {
   padding: 130px;
   margin: 20px;
+  border-radius: 30px;
   background-color: $main-grey;
   &:hover {
     -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
