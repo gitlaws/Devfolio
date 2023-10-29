@@ -15,6 +15,11 @@
   gap: 1rem;
 }
 
+.scroller__inner > img {
+  width: 10em;
+  height: 10em;
+}
+
 .scroller[data-animated="true"] {
   overflow: hidden;
   -webkit-mask: linear-gradient(
