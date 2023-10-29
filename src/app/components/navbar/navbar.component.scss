@@ -85,28 +85,8 @@
   background-color: #ffffff;
 }
 
-/* media query for tablet devices */
-@media (max-width: $tablet) {
-  .custom-shape-divider svg {
-    width: calc(200% + 1.3px);
-    height: 150px;
-  }
-  .hero-col {
-    max-width: 100%;
-    width: clamp(300px, 50vw, 600px);
-    padding: 0;
-  }
-  .hero-img {
-    display: none;
-  }
-}
-
 /* media query for mobile devices */
 @media (max-width: $mobile) {
-  .custom-shape-divider svg {
-    width: calc(250% + 1.3px);
-    height: 150px;
-  }
   .zone a {
     font-size: 1rem;
   }
