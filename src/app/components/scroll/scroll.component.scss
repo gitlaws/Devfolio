@@ -2,136 +2,160 @@
 @import "src/styles/_mixins";
 @import "src/styles/_variables";
 
-.scroller {
-  max-width: 600px;
-  outline: 3px solid lime;
-  overflow: hidden;
-}
-
-.scroller_inner {
-  padding-block: 1rem;
+.logo-scroll-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.scroller__inner > img {
-  width: 10em;
-  height: 10em;
-}
-
-.scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
+  border: 1px solid #ccc;
+  white-space: nowrap;
 
-.scroller[data-animated="true"] .scroller__inner {
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
-}
-
-.scroller[data-direction="right"] {
-  --_animation-direction: reverse;
-}
-
-.scroller[data-direction="left"] {
-  --_animation-direction: forwards;
-}
-
-.scroller[data-speed="fast"] {
-  --_animation-duration: 20s;
-}
-
-.scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
-}
-
-.tag-list {
-  margin: 0;
-  padding-inline: 0;
-  list-style: none;
-  color: #fff;
-}
-
-.tag-list li {
-  padding: 1rem;
-  background: $main-grey;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem -0.25rem $main-dark-grey;
-}
-
-#skills {
-  color: $quaternary-background;
-
-  h3 {
-    text-align: center;
-    justify-self: center;
-    margin-top: 20px;
-  }
-
-  h4 {
-    font-size: 12px;
-  }
-
-  h3,
-  h4 {
-    color: $quaternary-background;
-  }
-
-  ul,
-  li {
-    text-align: center;
-    justify-self: center;
+  .logo {
+    flex: 0 0 auto;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    animation: scrollAnimation 10s linear infinite;
   }
 }
 
-.skills-container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 0 40px;
-  // grid-column: 2 / span 2
-  // grid-template-rows: 1fr;
-  justify-items: center;
-
-  .zone {
-    text-align: center;
-    font-size: 6em;
-    border-radius: 4px;
-    // border: 1px solid $quaternary-background;
-    transition: all 0.3s linear;
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(100%);
   }
-
-  .fa-angular {
-    @include linear-gradient-angular;
-  }
-
-  .fa-node-js {
-    @include linear-gradient-node;
-  }
-
-  .fa-html5 {
-    @include linear-gradient-html;
-  }
-
-  .fa-css3-alt {
-    @include linear-gradient-css;
-  }
-
-  .fa-sass {
-    @include linear-gradient-sass;
-  }
-
-  .fa-gitkraken {
-    @include linear-gradient-github;
+  100% {
+    transform: translateX(-100%);
   }
 }
+
+
+// .scroller {
+//   max-width: 600px;
+//   outline: 3px solid lime;
+//   overflow: hidden;
+
+//   &__inner {
+//     padding-block: 1rem;
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 1rem;
+//   }
+// }
+
+// img {
+//   width: 10em;
+//   height: 10em;
+// }
+
+// .scroller[data-animated="true"] {
+//   overflow: hidden;
+//   -webkit-mask: linear-gradient(
+//     90deg,
+//     transparent,
+//     white 20%,
+//     white 80%,
+//     transparent
+//   );
+//   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+// }
+
+// .scroller[data-animated="true"] .scroller__inner {
+//   width: max-content;
+//   flex-wrap: nowrap;
+//   animation: scroll var(--_animation-duration, 40s)
+//     var(--_animation-direction, forwards) linear infinite;
+// }
+
+// .scroller[data-direction="right"] {
+//   --_animation-direction: reverse;
+// }
+
+// .scroller[data-direction="left"] {
+//   --_animation-direction: forwards;
+// }
+
+// .scroller[data-speed="fast"] {
+//   --_animation-duration: 20s;
+// }
+
+// .scroller[data-speed="slow"] {
+//   --_animation-duration: 60s;
+// }
+
+// .tag-list {
+//   margin: 0;
+//   padding-inline: 0;
+//   list-style: none;
+//   color: #fff;
+// }
+
+// .tag-list li {
+//   padding: 1rem;
+//   background: $main-grey;
+//   border-radius: 0.5rem;
+//   box-shadow: 0 0.5rem 1rem -0.25rem $main-dark-grey;
+// }
+
+// #skills {
+//   color: $quaternary-background;
+
+//   h3 {
+//     text-align: center;
+//     justify-self: center;
+//     margin-top: 20px;
+//   }
+
+//   h4 {
+//     font-size: 12px;
+//   }
+
+//   h3,
+//   h4 {
+//     color: $quaternary-background;
+//   }
+
+//   ul,
+//   li {
+//     text-align: center;
+//     justify-self: center;
+//   }
+// }
+
+// .skills-container {
+//   display: grid;
+//   grid-gap: 20px;
+//   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+//   padding: 0 40px;
+//   // grid-column: 2 / span 2
+//   // grid-template-rows: 1fr;
+//   justify-items: center;
+
+//   .zone {
+//     text-align: center;
+//     font-size: 6em;
+//     border-radius: 4px;
+//     // border: 1px solid $quaternary-background;
+//     transition: all 0.3s linear;
+//   }
+
+//   .fa-angular {
+//     @include linear-gradient-angular;
+//   }
+
+//   .fa-node-js {
+//     @include linear-gradient-node;
+//   }
+
+//   .fa-html5 {
+//     @include linear-gradient-html;
+//   }
+
+//   .fa-css3-alt {
+//     @include linear-gradient-css;
+//   }
+
+//   .fa-sass {
+//     @include linear-gradient-sass;
+//   }
+
+//   .fa-gitkraken {
+//     @include linear-gradient-github;
+//   }
+// }

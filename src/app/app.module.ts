@@ -10,6 +10,7 @@ import { CoverComponent } from './components/cover/cover.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { GridPanelComponent } from './components/grid-panel/grid-panel.component';
 import { ScrollComponent } from './components/scroll/scroll.component';
+import { MockComponent } from './components/mock/mock.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ScrollComponent } from './components/scroll/scroll.component';
     NavbarComponent,
     GridPanelComponent,
     ScrollComponent,
+    MockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
