@@ -46,6 +46,7 @@
 // }
 
 .box > img {
-  width: 5rem;
-  height: 5rem;
+  width: 10rem;
+  height: 40rem;
+  object-fit: scale-down;
 }
