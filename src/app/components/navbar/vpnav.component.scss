@@ -33,6 +33,11 @@
   transition: background-color 0.5s;
 }
 
+.logo {
+  list-style: none;
+  text-decoration: none;
+}
+
 .title {
   display: flex;
   align-items: center;
@@ -63,5 +68,8 @@
 }
 
 .vpsociallink {
-  gap: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
