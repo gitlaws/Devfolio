@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  templateUrl: './vpnav.component.html',
-  styleUrls: ['./vpnav.component.scss'],
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.scss'],
 })
 export class NavbarComponent {
   menuBtn!: HTMLElement;
