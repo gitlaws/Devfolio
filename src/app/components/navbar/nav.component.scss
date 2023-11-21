@@ -37,6 +37,23 @@
   background-color: $menu-items-hover;
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
+  font-size: 36px;
+  // width: 36px;
+  // height: 36px;
+}
+
 /* menu button */
 
 .menu-btn {
