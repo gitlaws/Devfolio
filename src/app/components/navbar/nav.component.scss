@@ -11,6 +11,7 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 1;
+  background-color: rgba(0, 0, 0, .6);
   backdrop-filter: blur(5px);
 }
 
@@ -48,15 +49,14 @@
   list-style: none;
 }
 
-// .social-links a:hover {
-//   background-color: blue;
-//   font-size: 36px;
-//   // width: 36px;
-//   // height: 36px;
-// }
+.social-links a {
+  font-size: 36px;
+  // width: 36px;
+  // height: 36px;
+}
 
 .social-links li a i:hover {
-  color: green; /* Set the hover color to light grey */
+  color: deeppink; /* Set the hover color to light grey */
 }
 /* menu button */
 
