@@ -48,17 +48,16 @@
   list-style: none;
 }
 
-.social-links a:hover {
-  background-color: blue;
-  font-size: 36px;
-  // width: 36px;
-  // height: 36px;
-}
+// .social-links a:hover {
+//   background-color: blue;
+//   font-size: 36px;
+//   // width: 36px;
+//   // height: 36px;
+// }
 
-.social-links i:hover {
-  background-color: blue;
+.social-links li a i:hover {
+  color: lightgrey; /* Set the hover color to light grey */
 }
-
 /* menu button */
 
 .menu-btn {
