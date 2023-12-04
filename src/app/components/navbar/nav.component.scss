@@ -48,10 +48,15 @@
   list-style: none;
 }
 
-.social-links a {
+.social-links a:hover {
+  background-color: blue;
   font-size: 36px;
   // width: 36px;
   // height: 36px;
+}
+
+.social-links i:hover {
+  background-color: blue;
 }
 
 /* menu button */
