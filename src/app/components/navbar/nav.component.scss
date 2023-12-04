@@ -9,7 +9,7 @@
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
@@ -18,10 +18,11 @@
 .zone .sig {
   text-decoration: none;
   font-family: "Rubik Glitch", serif;
+  // margin-top: 0.1rem;
   // font-size: clamp(60px, 8vw, 200px);
   // font-weight: 700;
   // color: #edd9d9;
-  font-size: 32px;
+  font-size: 30px;
   align-items: center;
   @include linear-gradient-sig;
 }
@@ -47,7 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 5px;
 }
 
 .social-links li {
