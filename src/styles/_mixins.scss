@@ -21,11 +21,13 @@
 
   @keyframes color-sig {
     0% {
-      color: red;
+      color: #CB13FE;
     }
-
+50% {
+      color: #E4497E;
+    }
     100% {
-      color: yellow;
+      color: #FF7C00;
     }
   }
 }
