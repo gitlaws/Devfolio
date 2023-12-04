@@ -16,16 +16,16 @@
 
 /* scroll section */
 
-@mixin linear-gradient-angular {
-  animation: color-angular 2s ease infinite alternate;
+@mixin linear-gradient-sig {
+  animation: color-sig 5s ease infinite alternate;
 
-  @keyframes color-angular {
+  @keyframes color-sig {
     0% {
-      color: $angular-red;
+      color: red;
     }
 
     100% {
-      color: $angular-white;
+      color: yellow;
     }
   }
 }

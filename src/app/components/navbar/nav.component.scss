@@ -17,9 +17,10 @@
 
 .zone .sig {
   text-decoration: none;
-  color: #edd9d9;
+  // color: #edd9d9;
   font-size: 2rem;
   align-items: center;
+  @include linear-gradient-sig;
 }
 
 .menu-items {
