@@ -8,11 +8,16 @@
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  // justify-content: space-between;
+  // padding: 1rem 2rem;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
+}
+
+.zone-top {
+  padding: 0 32px;
+  white-space: nowrap;
 }
 
 .zone .sig {
@@ -26,6 +31,14 @@
   align-items: center;
   @include linear-gradient-sig;
   // g@include glitchfx;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(1440px - 64px);
+  pointer-events: none;
 }
 
 .menu-items {
