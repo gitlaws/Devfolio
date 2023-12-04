@@ -11,14 +11,15 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 1;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
 }
 
-.zone a {
+.zone .sig {
   text-decoration: none;
   color: #edd9d9;
   font-size: 2rem;
+  align-items: center;
 }
 
 .menu-items {
@@ -50,7 +51,8 @@
 }
 
 .social-links a {
-  font-size: 36px;
+  font-size: 1.5rem;
+  color: #edd9d9;
   // width: 36px;
   // height: 36px;
 }
