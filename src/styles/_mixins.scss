@@ -21,13 +21,31 @@
 
   @keyframes color-sig {
     0% {
-      color: #CB13FE;
+      color: #ff7c00;
     }
-50% {
-      color: #E4497E;
+
+    25% {
+      color: #f66b2a;
     }
+
+    35% {
+      color: #ed5a54;
+    }
+
+    50% {
+      color: #e4497e;
+    }
+
+    65% {
+      color: #db38a8;
+    }
+
+    75% {
+      color: #d227d2;
+    }
+
     100% {
-      color: #FF7C00;
+      color: #cb13fe;
     }
   }
 }
