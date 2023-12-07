@@ -20,11 +20,14 @@
   // white-space: nowrap;
 }
 
+nav a {
+  text-decoration: none;
+  align-items: center;
+}
+
 .sig {
   display: flex;
-  text-decoration: none;
   // text-align: center;
-  // align-items: flex-end;
   font-family: "Rubik Glitch", serif;
   // margin-top: 0.3rem;
   // font-size: clamp(60px, 8vw, 200px);
@@ -46,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .social-links li {
@@ -54,7 +57,7 @@
 }
 
 .social-links a i {
-  font-size: 24px;
+  font-size: 20px;
   color: #5d5d5d;
   align-items: center;
   // width: 36px;
@@ -63,6 +66,15 @@
 
 .social-links li a i:hover {
   color: #edd9d9; /* Set the hover color to light grey */
+}
+
+.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: white;
+  transition: fill 0.25s;
+  pointer-events: auto;
 }
 
 .menu-items {
@@ -132,9 +144,16 @@
 
 /* media query for mobile devices */
 @media (max-width: $mobile) {
-  .zone a {
-    font-size: 2rem;
+  .zone ul {
+    visibility: hidden;
   }
+
+  a .sig {
+    text-decoration: none;
+    display: flex;
+    align-self: flex-start;
+  }
+
   .menu-btn {
     display: flex;
   }
