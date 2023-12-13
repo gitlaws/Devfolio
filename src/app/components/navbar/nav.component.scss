@@ -62,7 +62,7 @@ nav a {
   align-items: center;
   // width: 36px;
   // height: 36px;
-}
+}a
 
 .social-links li a i:hover {
   color: #edd9d9; /* Set the hover color to light grey */
@@ -70,6 +70,7 @@ nav a {
 
 .icon {
   display: block;
+  visibility: hidden;
   width: 20px;
   height: 20px;
   fill: white;
@@ -153,6 +154,63 @@ nav a {
     display: flex;
     align-self: flex-start;
   }
+
+
+  .icon {
+  visibility: visible;
+}
+
+  .menu-btn {
+    display: flex;
+  }
+  .menu-items {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    background-color: $main-dark-grey;
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu-items.open {
+    transform: translateX(0);
+  }
+  .menu-items li {
+    width: 100vw;
+    height: 100%;
+  }
+  .menu-items li a {
+    color: #ffffff;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-items li a:hover {
+    color: #111111;
+  }
+}
+
+@media (max-width: $tablet) {
+  .zone ul {
+    visibility: hidden;
+  }
+
+  a .sig {
+    text-decoration: none;
+    display: flex;
+    align-self: flex-start;
+  }
+
+
+  .icon {
+  visibility: visible;
+}
 
   .menu-btn {
     display: flex;
