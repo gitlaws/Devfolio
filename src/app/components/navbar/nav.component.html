@@ -1,7 +1,7 @@
-<nav class="zone">
-  <a href="#" class="sig">Ś</a>
+<nav class="navbar">
+  <a href="#" class="navbar-brand">Ś</a>
 
-  <ul class="social-links">
+  <ul class="navbar-menu">
     <li>
       <a href=""><i class="fab fa-youtube"></i></a>
     </li>
@@ -14,7 +14,7 @@
     <li>
       <a href=""><i class="fab fa-github"></i></a>
     </li>
-    <div class="icon">
+    <div class="icon" (click)="toggleDropdown()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
@@ -28,14 +28,19 @@
         <circle cx="5" cy="12" r="2"></circle>
       </svg>
     </div>
+
+    <div class="dropdown" *ngIf="isDropdownOpen">
+      <ul class="dropdown-content">
+        <li><a routerLink="/link1">Link 1</a></li>
+        <li><a routerLink="/link2">Link 2</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+
+    <!-- <div class="theme-switch">
+      <button>Toggle Theme</button>
+    </div> -->
   </ul>
 
-  <!-- <div class="menu-btn">
-    <div class="menu-btn__lines"></div>
-  </div>
-  <ul class="menu-items">
-    <li><a href="#" class="menu-item">Item 1</a></li>
-    <li><a href="#" class="menu-item">Item 2</a></li>
-    <li><a href="#" class="menu-item">Item 3</a></li>
-  </ul> -->
+ 
 </nav>

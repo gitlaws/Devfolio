@@ -2,7 +2,7 @@
 @import "src/styles/_mixins";
 @import "src/styles/_variables";
 
-.zone {
+.navbar {
   // position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ nav a {
   align-items: center;
 }
 
-.sig {
+.navbar-brand {
   display: flex;
   // text-align: center;
   font-family: "Rubik Glitch", serif;
@@ -45,26 +45,25 @@ nav a {
   pointer-events: none;
 }
 
-.social-links {
+.navbar-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
-.social-links li {
+.navbar-menu li {
   list-style: none;
 }
 
-.social-links a i {
+.navbar-menu a i {
   font-size: 20px;
   color: #5d5d5d;
   align-items: center;
   // width: 36px;
   // height: 36px;
-}a
-
-.social-links li a i:hover {
+}
+a .social-links li a i:hover {
   color: #edd9d9; /* Set the hover color to light grey */
 }
 
@@ -77,6 +76,64 @@ nav a {
   transition: fill 0.25s;
   pointer-events: auto;
 }
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+// .navbar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 10px;
+//   background-color: #eee;
+// }
+
+// .navbar-brand {
+//   font-size: 1.5em;
+//   font-weight: bold;
+// }
+
+// .navbar-menu {
+//   list-style-type: none;
+//   display: flex;
+// }
+
+// .navbar-menu li {
+//   margin-right: 15px;
+// }
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+// .theme-switch {
+//   margin-left: auto;
+// }
 
 .menu-items {
   list-style: none;
@@ -145,20 +202,19 @@ nav a {
 
 /* media query for mobile devices */
 @media (max-width: $mobile) {
-  .zone ul {
+  .navbar ul {
     visibility: hidden;
   }
 
-  a .sig {
+  a .navbar-brand {
     text-decoration: none;
     display: flex;
     align-self: flex-start;
   }
 
-
   .icon {
-  visibility: visible;
-}
+    visibility: visible;
+  }
 
   .menu-btn {
     display: flex;
@@ -197,20 +253,19 @@ nav a {
 }
 
 @media (max-width: $tablet) {
-  .zone ul {
+  .navbar ul {
     visibility: hidden;
   }
 
-  a .sig {
+  a .navbar-brand {
     text-decoration: none;
     display: flex;
     align-self: flex-start;
   }
 
-
   .icon {
-  visibility: visible;
-}
+    visibility: visible;
+  }
 
   .menu-btn {
     display: flex;
