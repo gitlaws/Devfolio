@@ -14,7 +14,7 @@
     <li>
       <a href=""><i class="fab fa-github"></i></a>
     </li>
-    <div class="icon" (click)="toggleDropdown()">
+    <div class="icon">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
@@ -29,18 +29,5 @@
       </svg>
     </div>
 
-    <div class="dropdown" *ngIf="isDropdownOpen">
-      <ul class="dropdown-content">
-        <li><a routerLink="/link1">Link 1</a></li>
-        <li><a routerLink="/link2">Link 2</a></li>
-        <!-- Add more links as needed -->
-      </ul>
-    </div>
-
-    <!-- <div class="theme-switch">
-      <button>Toggle Theme</button>
-    </div> -->
   </ul>
-
- 
 </nav>
