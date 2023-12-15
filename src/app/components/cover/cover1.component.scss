@@ -4,7 +4,7 @@
 
 .parent {
   height: 200px;
-  background: gray;
+  background: $main-dark-grey;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
 }
 
 .child {
-  background-color: orange;
+  background-color: $main-brown;
 }
 
 h1 {
