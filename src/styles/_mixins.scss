@@ -16,10 +16,10 @@
 
 /* scroll section */
 
-@mixin linear-gradient-sig {
+@mixin linear-gradient-logo {
   animation: color-sig 5s ease infinite alternate;
 
-  @keyframes color-sig {
+  @keyframes color-logo {
     0% {
       color: #ff7c00;
     }
@@ -50,23 +50,22 @@
   }
 }
 
-
 @mixin glitchfx {
   @keyframes glitchy {
     0% {
-      text-shadow: 5px 4px #C1C1C1, -5px -6px #F2F2F2;
+      text-shadow: 5px 4px #c1c1c1, -5px -6px #f2f2f2;
     }
     25% {
-      text-shadow: -5px -6px #C1C1C1, 5px 4px #F2F2F2;
+      text-shadow: -5px -6px #c1c1c1, 5px 4px #f2f2f2;
     }
     50% {
-      text-shadow: 5px -4px #C1C1C1, -8px 4px #F2F2F2;
+      text-shadow: 5px -4px #c1c1c1, -8px 4px #f2f2f2;
     }
     75% {
-      text-shadow: -8px -4px #C1C1C1, -5px -4px #F2F2F2;
+      text-shadow: -8px -4px #c1c1c1, -5px -4px #f2f2f2;
     }
     100% {
-      text-shadow: -5px 0 #C1C1C1, 5px -4px #F2F2F2;
+      text-shadow: -5px 0 #c1c1c1, 5px -4px #f2f2f2;
     }
   }
 }
