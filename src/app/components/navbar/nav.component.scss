@@ -57,6 +57,11 @@ i:hover {
   pointer-events: auto;
 }
 
+.navbar-container > .icon > .navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* M.Q.'S */
 // @media (max-width: $mobile) {
 //   .navbar-container ul {
