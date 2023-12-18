@@ -4,34 +4,34 @@
 
 .parent {
   height: 200px;
-  background: $main-brown;
+  // background: ;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-self: center;
   align-items: center;
   padding: 20px 20px;
 }
 
-.child {
-//   background-color: #fff;
-}
+// .child {
+// //   background-color: #fff;
+// }
 
 h1 {
   text-align: center;
-//   font-size: small;
+  //   font-size: small;
 }
 
-.btn{
-  background-color: rgba(101, 117, 133, .16);
-  width: 15em;
-  height: 8em;
+.btn {
+  background-color: #fff;
+  // background-color: rgba(101, 117, 133, 0.16);
+  width: 10em;
+  height: 5em;
   border-radius: 10em;
   border: 1px solid #3c3f44;
   padding: 0 0.5em;
 
-  box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
-              inset 0 8px 8px rgba(0,0,0, .1),
-              inset 0 -4px 4px rgba(0,0,0, .1);
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
 
   position: relative;
 
@@ -41,20 +41,20 @@ h1 {
   cursor: pointer;
 }
 
-.btn__indicator{
+.btn__indicator {
   background-color: #fff;
-  width: 7em;
-  height: 7em;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
 
   position: absolute;
 
-  box-shadow: 0 8px 40px rgba(0,0,0, .2);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
-.btn__icon-container{
+.btn__icon-container {
   width: 100%;
   height: 100%;
 
@@ -63,17 +63,42 @@ h1 {
   align-items: center;
 }
 
-.btn__icon{
+.btn__icon {
   color: #f7f7f7;
   font-size: 3rem;
 }
 
-.btn__icon.animated{
+.btn__icon.animated {
   animation: spin 0.5s;
 }
 
-@keyframes spin{
+@keyframes spin {
   to {
     transform: rotate(360deg);
   }
+}
+
+// .btn__icon {
+//   @include spinAnimation; // Use the default duration
+
+//   // Other styles for your button icon...
+
+//   &.custom-duration {
+//     @include spinAnimation(1s); // Use a custom duration
+//   }
+// }
+
+.darkmode .btn {
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.3),
+    inset 8px 0 8px rgba(0, 0, 0, 0.3), inset 0 -4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.darkmode .btn__indicator {
+  transform: translateX(7em);
+  background-color: var(--dark-color);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.darkmode .btn__icon {
+  color: var(--dark-icon-color);
 }
