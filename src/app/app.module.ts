@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { GridPanelComponent } from './components/grid-panel/grid-panel.component';
 import { ScrollComponent } from './components/scroll/scroll.component';
 import { MockComponent } from './components/mock/mock.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MockComponent } from './components/mock/mock.component';
     GridPanelComponent,
     ScrollComponent,
     MockComponent,
+    ToggleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

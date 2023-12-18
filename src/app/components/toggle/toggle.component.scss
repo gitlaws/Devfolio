@@ -1,0 +1,78 @@
+@import "src/styles/_colors";
+@import "src/styles/_mixins";
+@import "src/styles/_variables";
+
+/* toggle.component.css */
+.parent {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgba(101, 117, 133, 0.16);
+  width: 10em;
+  height: 5em;
+  border-radius: 10em;
+  border: 1px solid $btn-border; 
+  padding: 0 0.5em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.btn__indicator {
+  background-color: #fff;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.btn__icon-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__icon {
+  color: gold;
+  font-size: 3rem;
+}
+
+.btn__icon.animated {
+  animation: spin 0.5s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.darkmode .btn {
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.3),
+    inset 8px 0 8px rgba(0, 0, 0, 0.3), inset 0 -4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.darkmode .btn__indicator {
+  background-color: black;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.darkmode .btn__icon {
+  color: black;
+}
