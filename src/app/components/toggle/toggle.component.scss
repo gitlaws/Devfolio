@@ -15,6 +15,11 @@
 h1 {
   text-align: center;
   padding-bottom: 24px;
+  color: #D5CABD;
+}
+
+.btn:hover {
+  border: 1px solid $btn-hover;
 }
 
 .btn {
@@ -75,7 +80,7 @@ h1 {
 }
 
 .darkmode .btn__icon {
-  color: black;
+  color: white;
 }
 
 .highlight {
