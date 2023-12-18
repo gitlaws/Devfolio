@@ -64,19 +64,19 @@ h1 {
   font-size: 3rem;
 }
 
-.btn__icon.animated {
-  animation: spin 0.5s;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-// .btn__icon {
-//   @include spinAnimation;
+// .btn__icon.animated {
+//   animation: spin 0.5s;
 // }
+
+// @keyframes spin {
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+.btn__icon.animated {
+  @include spinAnimation;
+}
 
 .darkmode .btn {
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.3),
@@ -85,10 +85,10 @@ h1 {
 
 .darkmode .btn__indicator {
   transform: translateX(7em);
-  background-color: var(--dark-color);
+  background-color: black;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
 }
 
 .darkmode .btn__icon {
-  color: var(--dark-icon-color);
+  color: black;
 }
