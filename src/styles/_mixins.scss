@@ -22,27 +22,27 @@
 /* scroll section */
 
 @mixin linear-gradient-logo {
-  animation: color-logo 15s ease infinite alternate;
+  animation: color-logo 25s ease infinite alternate;
 
   @keyframes color-logo {
     0% {
-      color: #ffc75f;
+      color: #845EC2;
     }
 
     25% {
-      color: #00c9a7;
+      color: #4B4453;
     }
 
     50% {
-      color: #ff9671;
+      color: #B0A8B9;
     }
 
     75% {
-      color: #d65db1;
+      color: #C34A36;
     }
 
     100% {
-      color: #845ec2;
+      color: #FF8066;
     }
   }
 }
