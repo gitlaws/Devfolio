@@ -21,6 +21,19 @@ html {
   color-scheme: dark;
 }
 
+
+body {
+  &.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
 // h1,
 // h2,
 // h3,
