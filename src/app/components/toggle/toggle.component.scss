@@ -15,7 +15,7 @@
 h1 {
   text-align: center;
   padding-bottom: 24px;
-  color: #D5CABD;
+  color: #d5cabd;
 }
 
 .btn:hover {
@@ -57,16 +57,7 @@ h1 {
 .btn__icon {
   color: $btn-icon;
   font-size: 3rem;
-}
-
-.btn__icon.animated {
-  animation: spin 0.5s;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+  @include rotate;
 }
 
 .darkmode .btn {
